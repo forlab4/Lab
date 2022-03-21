@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{348EA37E-FA2C-4371-9E9C-311DC1563098}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project_vniia</RootNamespace>
+    <AssemblyName>project_vniia</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\APM\Desktop\Новая папка %283%29\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>916C712910F6930312A223C129A7E9BCA6CD5450</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>project_vniia_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SplashScreen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SplashScreen.Winforms.1.0.0\lib\SplashScreen.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_filtr_change.cs" />
+    <Compile Include="Class_Protokol.cs" />
+    <Compile Include="Forms\Form4_splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form4_splash.Designer.cs">
+      <DependentUpon>Form4_splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_Blocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_Blocks.Designer.cs">
+      <DependentUpon>Add_Blocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calibr.cs" />
+    <Compile Include="Class_SAVE\Class_Save_blockMetro.cs" />
+    <Compile Include="Class_SAVE\Class_Save_blocks.cs" />
+    <Compile Include="Class_SAVE\Class_Save_cannote.cs" />
+    <Compile Include="Class_SAVE\Class_Save_kan.cs" />
+    <Compile Include="Class_SAVE\Class_Save_kanS.cs" />
+    <Compile Include="Class_SAVE\Class_Save_operMetro.cs" />
+    <Compile Include="Class_SAVE\Class_Save_prov.cs" />
+    <Compile Include="Class_SAVE\Class_Save_provFey.cs" />
+    <Compile Include="Class_SAVE\Class_Save_provTCPM.cs" />
+    <Compile Include="Class_SAVE\Class_Save_rabotBD.cs" />
+    <Compile Include="Class_SAVE\Class_Save_systemVsbore.cs" />
+    <Compile Include="Class_SAVE\Class_Save_termocalibr.cs" />
+    <Compile Include="Class_SAVE\Class_Save_zamechPoBD.cs" />
+    <Compile Include="Class_ways.cs" />
+    <Compile Include="Class_zagruz.cs" />
+    <Compile Include="Filtr_2.cs" />
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form4_func_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form4_func_new.Designer.cs">
+      <DependentUpon>Form4_func_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_cod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_cod.Designer.cs">
+      <DependentUpon>Form_cod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_System.Designer.cs">
+      <DependentUpon>Form_System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_way_system.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_way_system.Designer.cs">
+      <DependentUpon>Form_way_system.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Otchet.Designer.cs">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ways_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ways_change.Designer.cs">
+      <DependentUpon>Form_ways_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_protokol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_protokol.Designer.cs">
+      <DependentUpon>Form_protokol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickBox.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Proverka.cs" />
+    <Compile Include="TCPM82_NewDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TCPM82_NewDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zamech_BD.cs" />
+    <EmbeddedResource Include="Forms\Form4_splash.resx">
+      <DependentUpon>Form4_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_Blocks.resx">
+      <DependentUpon>Add_Blocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form4_func_new.resx">
+      <DependentUpon>Form4_func_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_cod.resx">
+      <DependentUpon>Form_cod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_System.resx">
+      <DependentUpon>Form_System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_way_system.resx">
+      <DependentUpon>Form_way_system.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Otchet.resx">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_ways_change.resx">
+      <DependentUpon>Form_ways_change.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_protokol.resx">
+      <DependentUpon>Form_protokol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="project_vniia_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TCPM82_NewDataSet.xsc">
+      <DependentUpon>TCPM82_NewDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TCPM82_NewDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TCPM82_NewDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TCPM82_NewDataSet.xss">
+      <DependentUpon>TCPM82_NewDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
